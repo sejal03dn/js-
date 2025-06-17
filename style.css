@@ -1,72 +1,85 @@
-/* style.css file*/
-body {
-    display: flex;
-    justify-content: center;
+/* style.css */
+@import url(
+'https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
     margin: 0;
     padding: 0;
-    height: 100vh;
     box-sizing: border-box;
+}
+
+.utility_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    height: 400px;
+    width: 400px;
+    background-color: rgb(207, 224, 159);
+    border-radius: 15px;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.outer-box {
+    height: 100vh;
+}
+
+.inner-box {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.btn-container {
+    gap: 15px;
+}
+
+.logo-text {
+    color: rgb(31, 145, 31);
+}
+
+.gfglogo {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-style {
+    width: 100px;
+    height: 30px;
+    background: green;
+    border-radius: 15px;
+    color: whitesmoke;
     text-align: center;
-    background: rgb(128 0 0 / 66%);
-}
-.container {
-    width: 100%;
-    max-width: 500px;
-    margin: 5px;
+    padding: 3px;
+    border: none;
 }
 
-.container h1 {
-    color: #ffffff;
+.message {
+    background-color: rgb(47, 71, 11);
+    height: 100px;
+    text-align: center;
+    color: antiquewhite;
+    padding: 25px;
+    border-radius: 5px;
+    font-size: 20px;
 }
 
-.section {
-    background-color: #ffffff;
-    padding: 50px 30px;
-    border: 1.5px solid #b2b2b2;
-    border-radius: 0.25em;
-    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
-}
-
-#my-qr-reader {
-    padding: 20px !important;
-    border: 1.5px solid #b2b2b2 !important;
-    border-radius: 8px;
-}
-
-#my-qr-reader img[alt="Info icon"] {
-    display: none;
-}
-
-#my-qr-reader img[alt="Camera based scan"] {
-    width: 100px !important;
-    height: 100px !important;
-}
-
-button {
-    padding: 10px 20px;
-    border: 1px solid #b2b2b2;
-    outline: none;
-    border-radius: 0.25em;
-    color: white;
+input {
+    height: 50px;
+    width: 300px;
+    border: 2px solid rgb(14, 112, 14);
+    border-radius: 15px;
+    text-align: center;
     font-size: 15px;
-    cursor: pointer;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    background-color: #008000ad;
-    transition: 0.3s background-color;
 }
 
-button:hover {
-    background-color: #008000;
+.para-text {
+    padding: 20px;
 }
 
-#html5-qrcode-anchor-scan-type-change {
-    text-decoration: none !important;
-    color: #1d9bf0;
-}
-
-video {
-    width: 100% !important;
-    border: 1px solid #b2b2b2 !important;
-    border-radius: 0.25em;
+.sub-heading {
+    color: rgb(12, 78, 12);
+    font-size: 25px;
 }
